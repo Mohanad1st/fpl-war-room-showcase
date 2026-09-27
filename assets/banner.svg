@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="FPL War Room — Many opinions in, one number-backed weekly decision out">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="FPL War Room, Independent Build case study">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#161A17"/><stop offset="1" stop-color="#232A26"/>
     </linearGradient>
   </defs>
-  <rect width="1280" height="320" rx="18" fill="url(#g)"/>
-  <path d="M760 250 C 860 205, 960 295, 1060 250 S 1260 205, 1280 230 L1280 320 L760 320 Z" fill="#7FB9A2" opacity="0.10"/>
-  <path d="M640 275 C 780 235, 900 315, 1040 275 S 1220 240, 1280 262 L1280 320 L640 320 Z" fill="#7FB9A2" opacity="0.12"/>
-  <text x="64" y="74" fill="#7FB9A2" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="4">INDEPENDENT BUILD · CASE STUDY</text>
-  <text x="64" y="150" fill="#E4E6E0" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700">FPL War Room</text>
-  <rect x="64" y="172" width="72" height="3" rx="1.5" fill="#7FB9A2"/>
-  <text x="64" y="218" fill="#9BA59D" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="25"><tspan x="64" dy="0">Many opinions in, one number-backed weekly decision out</tspan></text>
+  <rect width="1280" height="300" rx="18" fill="url(#g)"/>
+  <path d="M760 230 C 860 185, 960 275, 1060 230 S 1260 185, 1280 210 L1280 300 L760 300 Z" fill="#7FB9A2" opacity="0.10"/>
+  <path d="M640 255 C 780 215, 900 295, 1040 255 S 1220 220, 1280 242 L1280 300 L640 300 Z" fill="#7FB9A2" opacity="0.12"/>
+  <text x="64" y="92" fill="#9FD3BD" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="32" font-weight="600" letter-spacing="5">INDEPENDENT BUILD</text>
+  <text x="64" y="196" fill="#E4E6E0" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700">FPL War Room</text>
+  <rect x="64" y="226" width="96" height="5" rx="2.5" fill="#7FB9A2"/>
 </svg>

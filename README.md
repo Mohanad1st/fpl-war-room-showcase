@@ -1,8 +1,10 @@
-<p align="center"><img src="assets/banner.svg" alt="FPL War Room — Many opinions in, one number-backed weekly decision out" width="100%"></p>
+<p align="center"><img src="assets/banner.svg" alt="FPL War Room" width="100%"></p>
 
-<p align="center"><b>Status:</b> In weekly use, private &nbsp;·&nbsp; <b>Built by</b> <a href="https://github.com/Mohanad1st">Mohannad Hesham</a> &nbsp;·&nbsp; <b>Source:</b> private</p>
+<p align="center"><b>Many opinions in, one number-backed weekly decision out</b></p>
 
-> **This is a showcase, not the code.** The source is private because it is a personal tool. This page shows what it does and how it was built, not the code itself. A live walkthrough is available on request.
+<p align="center"><b>Status:</b> In weekly use, private &nbsp;·&nbsp; <b>Built by</b> <a href="https://github.com/Mohanad1st">Mohannad Hesham</a></p>
+
+> Case study only: the source is private because it is a personal tool. Walkthrough on request.
 
 ## The problem
 
@@ -20,13 +22,15 @@ A side project, and a place to practise the same discipline I use at work. Every
 How the work flows:
 
 ```mermaid
-flowchart LR
-  A[Official game data] --> D[Expected-points model]
-  B[Public expert commentary] --> C[Independence check]
+flowchart TD
+  accTitle: How the weekly decision is made
+  accDescr: Official game data feeds an expected-points model; public commentary is checked for independence; the model produces ranked picks with cited evidence, and nothing is acted on until you confirm.
+  A[Game data] --> D[Points model]
+  B[Commentary] --> C[Independence check]
   C --> D
-  D --> E[Ranked picks with cited evidence]
+  D --> E[Ranked picks]
   E --> F{You confirm}
-  F --> G[Action taken]
+  F --> G[Action]
 ```
 
 <sub>Screens are not shown because the dashboard is private.</sub>
@@ -37,15 +41,14 @@ Python · a hand-built HTML and SVG dashboard · plain configuration files · no
 
 ## Built responsibly
 
-- Read-only by default, using only public data
-- No credentials are handled by the automated parts
-- Any change to a real account needs a human confirmation, or an off-by-default unattended mode behind several explicit switches
+- Analysis is read-only and uses only public data
+- Any change to a real account needs a human confirmation; an optional unattended mode is off by default and sits behind several explicit switches
 - Every recommendation has to cite the data behind it
 - Scraped text is sanitised before it is shown
 
 ## What it deliberately doesn't do
 
-- It is a personal tool, not a product, and it isn't publicly hosted.
+- It is a personal tool, not a product, and it isn't publicly accessible.
 
 ## More independent builds
 
