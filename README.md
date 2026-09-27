@@ -4,51 +4,50 @@
 
 <p align="center"><b>Status:</b> In weekly use, private &nbsp;·&nbsp; <b>Built by</b> <a href="https://github.com/Mohanad1st">Mohannad Hesham</a></p>
 
-> Case study only: the source is private because it is a personal tool. Walkthrough on request.
+> This is a case study. The source is private because it is a personal tool.
 
-## The problem
+## Why I built it
 
-A side project, and a place to practise the same discipline I use at work. Every Fantasy Premier League gameweek there are a dozen opinions and a deadline. This tool reads the official game data and public expert commentary, checks whether those sources are actually independent or just repeating each other, and produces one ranked, evidence-backed recommendation.
+A side project. Every Fantasy Premier League gameweek there are a dozen opinions and a deadline. This tool reads the official game data and public expert commentary, checks whether those sources are actually independent or just repeating each other, and produces ranked, evidence-backed recommendations.
 
 ## What it does
 
-- A weekly report with ranked transfer and captain picks
-- An expected-points model based on form, fixtures and availability
-- Cross-checks against video and blog sources, flagging when they're only echoing each other
-- A staged action flow with a human confirmation step
+- A weekly report with ranked transfer and captain picks.
+- An expected-points model based on form, fixtures and availability.
+- Cross-checks against video and blog sources, and flags when they're only echoing each other.
+- A staged action flow with a human confirmation step.
 
-## See it
-
-How the work flows:
+## How it works
 
 ```mermaid
 flowchart TD
   accTitle: How the weekly decision is made
-  accDescr: Official game data feeds an expected-points model; public commentary is checked for independence; the model produces ranked picks with cited evidence, and nothing is acted on until you confirm.
+  accDescr: Official game data feeds an expected-points model; public commentary is checked for independence and narrows the candidate pool; the result is ranked picks with cited evidence, acted on only after confirmation unless an off-by-default unattended mode is switched on.
   A[Game data] --> D[Points model]
   B[Commentary] --> C[Independence check]
-  C --> D
-  D --> E[Ranked picks]
-  E --> F{You confirm}
-  F --> G[Action]
+  C --> E[Candidate pool]
+  D --> E
+  E --> F[Ranked picks]
+  F --> G{Confirm}
+  G --> H[Action]
 ```
 
-<sub>Screens are not shown because the dashboard is private.</sub>
+<sub>Screens aren&#x27;t shown because the dashboard is private.</sub>
 
-## Built with
+## What it's built on
 
 Python · a hand-built HTML and SVG dashboard · plain configuration files · no database
 
-## Built responsibly
+## Safeguards
 
-- Analysis is read-only and uses only public data
-- Any change to a real account needs a human confirmation; an optional unattended mode is off by default and sits behind several explicit switches
-- Every recommendation has to cite the data behind it
-- Scraped text is sanitised before it is shown
+- Analysis is read-only and uses only public data.
+- Any change to a real account needs a human confirmation. An optional unattended mode is off by default and sits behind several explicit switches.
+- Every recommendation has to cite the data behind it.
+- Scraped text is sanitised before it's shown.
 
-## What it deliberately doesn't do
+## What it doesn't do
 
-- It is a personal tool, not a product, and it isn't publicly accessible.
+- It's a personal tool, not a product, and it isn't publicly accessible.
 
 ## More independent builds
 
